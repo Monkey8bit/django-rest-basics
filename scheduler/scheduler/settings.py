@@ -1,10 +1,10 @@
 from pathlib import Path
-import os
+import json
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-($%fej1k)m4g!$mx@w+wv4#2+)sbyesv4lpp0q($mdxec==kzb"
+SECRET_KEY = json.load(open("secrets.json"))["django_secret"]
 
 DEBUG = True
 
