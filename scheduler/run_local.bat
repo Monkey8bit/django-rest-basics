@@ -1,2 +1,2 @@
-python manage.py runserver
+workon django-rest && python manage.py runserver
 pause

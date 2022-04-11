@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class SchedulerUser(AbstractUser):
-    username = models.CharField(max_length=60)
+    username = models.CharField(max_length=60, default="Username")
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     email = models.EmailField(max_length=60, unique=True)
