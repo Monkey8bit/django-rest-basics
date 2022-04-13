@@ -20,13 +20,19 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "users",
+    "users_projects",
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_RENDERER_CLASSES': [
+    'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
+        'djangorestframework_camel_case.render.CamelCaseJSONRenderer',
+        'djangorestframework_camel_case.render.CamelCaseBrowsableAPIRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer' if DEBUG else ""
-    ]
+    ),
+    'DEFAULT_PARSERCLASSES': (
+        'djangorestframework_camel_case.parser.CamelCaseJSONParser',
+    )
 }
 
 MIDDLEWARE = [
