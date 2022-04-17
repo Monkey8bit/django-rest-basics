@@ -23,7 +23,7 @@ class Note(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     is_active = models.BooleanField(default=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    modified_at = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     objects = models.Manager()
