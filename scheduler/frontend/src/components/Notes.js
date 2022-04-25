@@ -21,23 +21,21 @@ const NotesList = () => {
     const id = useParams().id;
 
     useEffect(() => {
-        const Project = async () => {
-            await axios
+        const Project = () => {
+            axios
                 .get(`http://127.0.0.1:8000/api/projects/?project_id=${id}`)
-                .then(response =>
-                    setProject(response.data[0])
-                ).catch(error => console.log(error));
+                .then(response => setProject(response.data[0]))
+                .catch(error => console.log(error));
         }
         Project();
-    })
+    }, [id])
 
     useEffect(() => {
-        const ProjectNotes = async () => {
-            await axios
+        const ProjectNotes = () => {
+            axios
                 .get(`http://127.0.0.1:8000/api/projects/${id}`)
-                .then(response =>
-                    setNotes(response.data)
-                ).catch(error => console.log(error));
+                .then(response => setNotes(response.data))
+                .catch(error => console.log(error));
         }
         ProjectNotes();
     }, [id]);

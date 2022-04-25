@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 
 
 const ProjectItem = ({project}) => {
-    console.log(project)
     let users = project.users.map((user) => <li>{user}</li>)
     return (
         <tr key={project.project_id}>

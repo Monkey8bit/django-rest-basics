@@ -4,18 +4,18 @@ import {useParams} from "react-router-dom";
 import axios from "axios";
 
 
-const SingleUser = ({}) => {
+const SingleUser = () => {
     const userId = useParams().id;
     const [user, setUser] = useState({})
     useEffect(() => {
-        const User = async () => {
-            await axios
-                .get(`http://127.0.0.1:8000/api/users/${userId}`)
-                .then(response => setUser(response.data))
-                .catch(error => console.log(error));
+        const User = () => {
+             axios
+                 .get(`http://127.0.0.1:8000/api/users/${userId}`)
+                 .then(response => setUser(response.data))
+                 .catch(error => console.log(error));
         }
         User();
-    })
+    }, [userId])
 
     return (
         <ul>
