@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin-bottom: 5px;
+}
+
+.navbar li{
+  display: inline;
+  margin: 10px;
+  background-color: lightblue;
+  transition: 0.5s;
+}
+
+.navbar li:hover {
+  background-color: lightsteelblue;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.project_header {
+  text-align: center;
+  width: 20%;
+  margin: 10px auto;
+}
+
+nav {
+  margin: 10px;
+}
+
+.users {
+  text-align: center;
+  background-color: lightblue;
+  width: 80%;
+  margin: 40px auto;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.maintable {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.maintable td {
+  padding-left: 5px;
+}
+
+th {
+  border: 1px solid black;
+}
+
+.footer {
+  vertical-align: bottom;
+  background-color: lightblue;
+}
