@@ -18,7 +18,7 @@ class ProjectModelSerializer(serializers.ModelSerializer):
 
 
 class NoteModelSerializer(serializers.ModelSerializer):
-    project = serializers.SlugRelatedField(slug_field="name", read_only=True)
+    # project = serializers.SlugRelatedField(slug_field="name", read_only=True)
     user_created = serializers.SlugRelatedField(queryset=SchedulerUser.objects.all(), slug_field="username")
 
     class Meta:

@@ -14,6 +14,7 @@ class NoteFilter(filters.FilterSet):
 
 class ProjectFilter(filters.FilterSet):
     project_name = filters.CharFilter(field_name="name", lookup_expr="contains")
+    project_id = filters.NumberFilter(field_name="project_id", lookup_expr="exact")
 
 
 class NoteLimitOffset(LimitOffsetPagination):
@@ -27,7 +28,7 @@ class ProjectLimitOffset(LimitOffsetPagination):
 class ProjectView(ListAPIView, CreateAPIView):
     serializer_class = ProjectModelSerializer
     queryset = Project.objects.all()
-    pagination_class = ProjectLimitOffset
+    # pagination_class = ProjectLimitOffset
     filterset_class = ProjectFilter
     filter_backends = [filters.DjangoFilterBackend]
 
@@ -40,7 +41,7 @@ class SingleProjectView(CreateAPIView, UpdateAPIView, RetrieveAPIView):
 
 class NoteView(ListAPIView, CreateAPIView, UpdateAPIView):
     serializer_class = NoteModelSerializer
-    pagination_class = NoteLimitOffset
+    # pagination_class = NoteLimitOffset
     filterset_class = NoteFilter
     filter_backends = [filters.DjangoFilterBackend]
 

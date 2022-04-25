@@ -12,7 +12,7 @@ class UserLimitOffset(LimitOffsetPagination):
 class UserView(ListAPIView):
     serializer_class = SchedulerUserModelSerializer
     queryset = SchedulerUser.objects.all()
-    pagination_class = UserLimitOffset
+    # pagination_class = UserLimitOffset
 
 
 class SingleUserView(UpdateAPIView, RetrieveAPIView):
