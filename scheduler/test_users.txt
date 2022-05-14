@@ -1,24 +1,10 @@
 
 super_mail: super@mail.ru
 
-super_passwd: FHymQZePYtAmumInzE8a
+super_passwd: K65kuZo3Jqpw5VQmfwdn
 
-@zFxMuL0RCJyandex.ru: lQeCiWXRLhfKGBe3NB8t
+@OalecovuOIyandex.ru: J6faVWcEc4Ta2mmNm2f9
 
-@r4hnKtNAb4mail.ru: Hee4yg7MPywPMmGrcYmA
+@5x4BxGS8Y8yandex.ru: RUehhN7hsQt2JWO0xaUx
 
-@BWW8N1hDYFyandex.ru: Fnf53yL0UGLMEnIS599K
-
-@blCLEFx7wQyandex.ru: 1rSFbAKdPslbl2c3cDtM
-
-@r02HfsRRaimail.ru: Q0QLrqHQiHaBorb9ot6x
-
-@YmvpAWBrVMyandex.ru: dtmne4vnRdTBpWqMj9hQ
-
-@Op2WCioKkYmail.ru: zWOTWHcQ4EgrunUzDAA5
-
-@3q8BdNyR4myandex.ru: ME8SRlEUrlIfrsH1pDvs
-
-@kmTil72T8ayandex.ru: E1IY61MEBz1jL2B4olC5
-
-@3mS3QWlcugmail.ru: NJByXnEhJgnG5XMiuL2H
+@33E5zVuA3Imail.ru: 6zsS9E3mYdGq3mZ3WSvj

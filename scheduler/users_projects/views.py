@@ -49,7 +49,6 @@ class NoteView(ListAPIView, CreateAPIView, UpdateAPIView):
         return Note.objects.filter(project=self.kwargs["project_id"])
 
     def perform_create(self, serializer):
-        print(serializer)
         project = Project.objects.get(project_id=self.kwargs["project_id"])
         serializer.save(project=project)
 

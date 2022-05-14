@@ -33,7 +33,15 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PARSERCLASSES': (
         'djangorestframework_camel_case.parser.CamelCaseJSONParser',
-    )
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ]
 }
 
 MIDDLEWARE = [
